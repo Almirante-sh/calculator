@@ -1,1 +1,1 @@
-Just a simple calculator. By Almirane
+Just a simple calculator. By Almirante

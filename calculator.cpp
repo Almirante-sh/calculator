@@ -11,14 +11,24 @@ std::cout << "Enter your first number:\n>";
 std::cin >> number1;
 std::cout << "Enter your second number:\n>";
 std::cin >> number2;
-if (userchoice == '+')
-   result = number1 + number2;
-else if (userchoice == '-')
-   result = number1 - number2; 
-else if (userchoice == '*')
+if (userchoice == '+') {
+  result = number1 + number2;
+}
+else if (userchoice == '-'){
+   result = number1 - number2;
+} 
+else if (userchoice == '*'){
    result = number1 * number2;
-else if (userchoice == '/')
+}
+else if (userchoice == '/'){
    result = number1 / number2;
+}
+if (number2 == 0 ){
+std::cout << "ERROR: you can't divide by 0\n";
+}
+else{
+std::cout << "ERROR: invalid operation\n";
+}
 std::cout << "Result:" << result << "\n";
 return 0;
 }
